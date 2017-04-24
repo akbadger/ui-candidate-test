@@ -6,13 +6,15 @@
 
      // Write a function that takes a single argument (a string) and returns the string reversed.
      function reverseString(str) {
-         // FILL THIS IN
-     }
-
+         return str.split("").reverse().join("");
+        }
+        reverseString("hello");
+     
      // Write a function that takes an array of numbers and returns the minimum value
      function findMinValue(values) {
-         // FILL THIS IN
+        return Math.min(values)
      }
+     findMinValue(values)
 
      // Write a function that takes an array and returns the distinct values only (i.e. removes duplicates)
      function findDistinctValues(values) {
@@ -23,9 +25,25 @@
      // For multiples of three print "Fizz" instead of the number.
      // For multiples of five print "Buzz".
      // For numbers which are multiples of both three and five print "FizzBuzz".
-     function doFizzBuzz() {
-         // FILL THIS IN
+     function doFizzBuzz(i) {
+         for (i = 1; i < 101; i ++ ) {
+            if (
+             i % 3 === 0
+         )
+            return Fizz 
+
+            if (
+                i % 5 === 0
+            )
+            return Buzz
+
+            if (
+                i % 3 === 0 && i % 5 === 0
+            )
+            return FizzBuzz 
+            } 
      }
+     doFizzBuzz()
 
      // You have a master array of strings, where each element is a fruit name.
      // You have a second array of fruit name strings, that is a list of fruits that should be removed from the fruits specified in the master array.
@@ -50,7 +68,9 @@
 
      // Write a function that will take any number of arguments and return their sum
      function sum() {
-         // FILL THIS IN
+         [1, 2, 3, 4, 5].reduce(function(a, v) {
+            return a + v
+        }, 0)
      }
 
      // Write a function that will return true if a specified string consists of only whitespace.
@@ -59,6 +79,17 @@
      }
 
      // write an example of a javascript closure
+     function showName (firstName, lastName) {
+        ​var nameIntro = "My name is "
+
+        ​function makeFullName () {      
+        ​return nameIntro + firstName + " " + lastName
+        }
+        ​
+        ​return makeFullName ()
+        }
+        ​
+        showName ("Aubrey", "Badger")
 
      // define a json object that represents a collection of people.
      // each person should have the following properties
